@@ -1,0 +1,36 @@
+.about {
+
+    &__grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+
+        @include breakpoint-up(medium){
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include breakpoint-up(large){
+            grid-template-columns: repeat(4, 1fr);
+        }
+        
+    }
+
+    &__item {
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: -2px 0px 10px grey;
+        
+    }
+
+    &__content {
+        padding: 15px;
+        line-height: 1.07;
+        
+    }
+
+}
+
+.about-me {
+    margin-bottom: 38px;
+}
+
